@@ -156,11 +156,7 @@ const calcDisplayBalance = function (account) {
     return acc + mov;
   }, 0);
 
-  // labelBalance.textContent = `${formatCur(
-  //   account.balance,
-  //   account.locale,
-  //   account.currency
-  // )}`;
+ 
   labelBalance.textContent = formatCur(
     account.balance,
     account.locale,
@@ -247,7 +243,7 @@ userNameGenerator(accounts);
 
 const startLogOutTimer = () => {
   // set timer to 5 min
-  let time = 30;
+  let time = 300;
 
   const tick = function () {
     // In each call, print remaining TIME TO UI
