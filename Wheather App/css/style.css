@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  position: relative;
+  font-family: 'Courgette', cursive;
+}
+
+.blur {
+  height: 100vh;
+  width: 100%;
+  background-image: url("/pexels-splitshire-1562.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-filter: blur(6px);
+          filter: blur(6px);
+}
+
+.search-field {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 25%;
+  min-height: 5%;
+  font-family: inherit;
+  font-size: 2rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding: 10px 10px;
+}
+/*# sourceMappingURL=style.css.map */
