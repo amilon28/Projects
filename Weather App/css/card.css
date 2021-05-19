@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+.center-element, .loading, .error {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  position: relative;
+  font-family: 'Courgette', cursive;
+  background: #22c1c3;
+  background: radial-gradient(circle, #22c1c3 0%, #fdbb2d 100%);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 10s ease infinite;
+          animation: gradient 10s ease infinite;
+}
+
+.loading {
+  font-size: 30px;
+}
+
+.error {
+  width: 100%;
+  text-align: center;
+  color: red;
+  text-decoration: underline;
+  font-size: 2rem;
+}
+
+.weather {
+  min-height: 50vh;
+  background-color: #eee;
+  width: 15%;
+  overflow: hidden;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.6);
+          box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+.weather-city {
+  font-size: 2rem;
+  text-align: center;
+  color: black;
+  padding-top: 1rem;
+}
+
+.weather_info {
+  font-size: 2rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.weather_info--value {
+  font-size: 3rem;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/*# sourceMappingURL=card.css.map */
