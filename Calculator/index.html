@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Calculator app</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <!-- My Code -->
+    <div class="big-container">
+      <!-- ! Part 1: Choose desired theme -->
+      <div class="preference">
+        <h3>calc</h3>
+        <div class="theme">
+          <h4 class="t">THEME</h4>
+          <div class="desired-theme-number">
+            <span>1</span>
+            <span>2</span><span>3</span>
+          </div>
+          <div data-switch-themes-container class="btns">
+            <button data-theme-1 class="btn-1"></button
+            ><button data-theme-2 class="btn-2"></button
+            ><button data-theme-3 class="btn-3"></button>
+          </div>
+        </div>
+      </div>
+      <!-- ! Part 2: user input number and result -->
+      <div class="output">
+        <div class="previous-operand" data-previous-operand></div>
+        <div class="current-operand" data-current-operand></div>
+      </div>
+      <!-- ! Part 3: Number and operations -->
+      <div data-keypad class="keypad">
+        <button data-number class="btn keypad-7">7</button
+        ><button data-number class="btn keypad-8">8</button
+        ><button data-number class="btn keypad-9">9</button
+        ><button data-delete class="btn keypad-del">DEL</button
+        ><button data-number class="btn keypad-4">4</button
+        ><button data-number class="btn keypad-5">5</button
+        ><button data-number class="btn keypad-6">6</button
+        ><button data-operation class="btn keypad-plus">+</button
+        ><button data-number class="btn keypad-1">1</button
+        ><button data-number class="btn keypad-2">2</button
+        ><button data-number class="btn keypad-3">3</button
+        ><button data-operation class="btn keypad-minus">-</button
+        ><button data-number class="btn keypad-point">.</button
+        ><button data-number class="btn keypad-0">0</button
+        ><button data-operation class="btn keypad-division">/</button
+        ><button data-operation class="btn keypad-x">x</button
+        ><button data-reset class="btn keypad-reset">Reset</button
+        ><button data-equal class="btn keypad-equal">=</button>
+      </div>
+    </div>
+  </body>
+</html>
