@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>countdown-timer</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- clock -->
+    <div class="clock">
+      <div class="hour-box">
+        <h3>hour</h3>
+        <div class="hour" data-h>
+          <input type="text" maxlength="2" placeholder="00" id="hour-value" />
+        </div>
+      </div>
+      <div class="minute-box">
+        <h3>minute</h3>
+        <div class="minute" data-m>
+          <input type="text" maxlength="2" placeholder="00" id="minute-value" />
+        </div>
+      </div>
+      <div class="seconds-box">
+        <h3>second</h3>
+        <div class="second" data-s>
+          <input type="text" maxlength="2" placeholder="00" id="second-value" />
+        </div>
+      </div>
+    </div>
+    <!-- clock -->
+    <!-- Controller buttons -->
+    <div class="controllers">
+      <button class="stop-btn" data-reset>
+        <svg class="stop-icon">
+          <use xlink:href="sprite.svg#icon-controller-stop"></use>
+        </svg>
+      </button>
+      <button class="play-btn" data-play>
+        <svg class="play-icon">
+          <use xlink:href="sprite.svg#icon-controller-play"></use>
+        </svg>
+      </button>
+      <button class="pause-btn" data-pause>
+        <svg class="pause-icon">
+          <use xlink:href="sprite.svg#icon-controller-paus"></use>
+        </svg>
+      </button>
+    </div>
+    <!-- Controller buttons -->
+  </body>
+</html>
