@@ -31,6 +31,11 @@ const formater = (v, el) => {
   }
 };
 
+// active play icon
+const active = () => {
+  playBtn.id = "";
+};
+
 //stop interval
 const stop = function () {
   clearInterval(int);
@@ -48,11 +53,7 @@ const countDown = (h, m, s) => {
     minuteEl.value = 60;
     hourEl.value--;
     formater(hourEl.value, hourEl);
-  } else if (
-    hourEl.value === "" &&
-    minuteEl.value === "" &&
-    secondEl.value === ""
-  ) {
+  } else if (h === 0 && m === 0 && s === 0) {
     stop();
   }
 };
@@ -88,7 +89,7 @@ playBtn.addEventListener("click", function () {
     minuteBox.style.borderColor = "#222";
     secondBox.style.borderColor = "#222";
   }
-
+  playBtn.id = "deactive";
   // if user input is a single value
   const twoDigitTime = time.map((t) => {
     if (String(t).length === 1) {
@@ -120,9 +121,11 @@ resetBtn.addEventListener("click", function () {
   minuteEl.value = "";
   secondEl.value = "";
   clearInterval(int);
+  active();
 });
 
 // Pause
 pauseBtn.addEventListener("click", function () {
   clearInterval(int);
+  active();
 });
