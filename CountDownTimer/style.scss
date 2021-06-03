@@ -104,6 +104,7 @@ body {
 
     .stop {
         &-btn {
+            position: relative;
             cursor: pointer;
             width: 4rem;
             height: 4rem;
@@ -112,6 +113,13 @@ body {
             border: 2px solid #222;
             background-color: transparent;
             margin-right: 1.5rem;
+
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
 
             &:focus {
                 outline: none;
@@ -175,4 +183,9 @@ body {
 ::-ms-input-placeholder {
 
     color: #2c2b2b;
+}
+
+#deactive {
+    opacity: 0.3;
+    pointer-events: none;
 }
