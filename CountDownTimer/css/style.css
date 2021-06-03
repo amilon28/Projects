@@ -155,6 +155,7 @@ body {
 }
 
 .controllers .stop-btn, .controllers .play-btn, .controllers .pause-btn {
+  position: relative;
   cursor: pointer;
   width: 4rem;
   height: 4rem;
@@ -163,6 +164,14 @@ body {
   border: 2px solid #222;
   background-color: transparent;
   margin-right: 1.5rem;
+}
+
+.controllers .stop-btn img, .controllers .play-btn img, .controllers .pause-btn img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .controllers .stop-btn:focus, .controllers .play-btn:focus, .controllers .pause-btn:focus {
@@ -219,5 +228,10 @@ body {
 
 ::-ms-input-placeholder {
   color: #2c2b2b;
+}
+
+#deactive {
+  opacity: 0.3;
+  pointer-events: none;
 }
 /*# sourceMappingURL=style.css.map */
