@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+  overflow: hidden;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bg {
+  width: calc(100vw + 6rem);
+  height: calc(100vh + 6rem);
+  overflow-x: hidden;
+  background: url("../businessmen-working-strategic-planning.jpg");
+  z-index: -1;
+  position: absolute;
+  top: -3rem;
+  left: -3rem;
+  -webkit-filter: blur(30px);
+          filter: blur(30px);
+}
+
+.loading-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 6rem;
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
