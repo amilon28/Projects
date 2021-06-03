@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Mate+SC&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Mate SC', sans-serif;
+  background-color: #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.clock {
+  margin-bottom: 4.5rem;
+  width: 40rem;
+  height: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.clock > * {
+  width: 10rem;
+  font-size: 1.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.clock .hour-box .hour {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px ridge #1b1b1b;
+  margin-top: .5rem;
+  font-size: 2.8rem;
+  border-radius: 1rem;
+}
+
+.clock .hour-box .hour input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  padding: 0 3.3rem;
+  font-family: inherit;
+  font-size: 3rem;
+}
+
+.clock .hour-box .hour input:focus {
+  outline: none;
+}
+
+.clock .minute-box .minute {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px ridge #1b1b1b;
+  margin-top: .5rem;
+  font-size: 2.8rem;
+  border-radius: 1rem;
+}
+
+.clock .minute-box .minute input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  padding: 0 3.3rem;
+  font-family: inherit;
+  font-size: 3rem;
+}
+
+.clock .minute-box .minute input:focus {
+  outline: none;
+}
+
+.clock .seconds-box .second {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px ridge #1b1b1b;
+  margin-top: .5rem;
+  font-size: 2.8rem;
+  border-radius: 1rem;
+}
+
+.clock .seconds-box .second input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  padding: 0 3.3rem;
+  font-family: inherit;
+  font-size: 3rem;
+}
+
+.clock .seconds-box .second input:focus {
+  outline: none;
+}
+
+.controllers .stop-btn, .controllers .play-btn, .controllers .pause-btn {
+  cursor: pointer;
+  width: 4rem;
+  height: 4rem;
+  position: relative;
+  border-radius: 50%;
+  border: 2px solid #222;
+  background-color: transparent;
+  margin-right: 1.5rem;
+}
+
+.controllers .stop-btn:focus, .controllers .play-btn:focus, .controllers .pause-btn:focus {
+  outline: none;
+}
+
+.controllers .stop-btn:hover, .controllers .play-btn:hover, .controllers .pause-btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.controllers .stop-btn:active, .controllers .play-btn:active, .controllers .pause-btn:active {
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
+}
+
+.controllers .stop-icon, .controllers .play-icon, .controllers .pause-icon {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  -webkit-transform: translateX(-50%, -50%);
+          transform: translateX(-50%, -50%);
+}
+
+.controllers .pause-btn {
+  margin-right: 0;
+}
+
+::-webkit-input-placeholder {
+  color: #2c2b2b;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #2c2b2b;
+  opacity: 1;
+}
+
+::-ms-input-placeholder {
+  color: #2c2b2b;
+  opacity: 1;
+}
+
+::placeholder {
+  color: #2c2b2b;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #2c2b2b;
+}
+
+::-ms-input-placeholder {
+  color: #2c2b2b;
+}
+/*# sourceMappingURL=style.css.map */
