@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  height: 100vh;
+  background: #ebee33;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(235, 238, 51, 0.919503)), to(#6adbf2));
+  background: linear-gradient(90deg, rgba(235, 238, 51, 0.919503) 0%, #6adbf2 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.card {
+  margin-top: 2rem;
+  opacity: 0;
+  width: 25rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: rgba(255, 255, 255, 0.25);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  -webkit-transition: opacity .4s;
+  transition: opacity .4s;
+}
+
+.card-confirmed {
+  padding: 1.5rem .5rem;
+  border-radius: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #2b2b2bc0;
+  background-color: transparent;
+}
+
+.card-recovered {
+  padding: 1.5rem .5rem;
+  border-radius: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #2b2b2bc0;
+  background-color: transparent;
+}
+
+.card-death {
+  padding: 1.5rem .5rem;
+  border-radius: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #2b2b2bc0;
+  background-color: transparent;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.country-flag {
+  width: 15vw;
+  opacity: 0;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+.number-confirmed {
+  margin-left: 1.4rem;
+}
+
+.number-recovered {
+  margin-left: 1.4rem;
+}
+
+.number-death {
+  margin-left: 1.4rem;
+}
+
+.number-mortal {
+  margin-left: 1.4rem;
+}
+
+.info {
+  margin-top: .6rem;
+  width: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flag {
+  width: 100%;
+}
+
+.card-MortalityRate .info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: .5rem;
+  padding-bottom: 2rem;
+}
+
+.load {
+  width: 12.8rem;
+  -webkit-animation: left-right 1s infinite alternate;
+          animation: left-right 1s infinite alternate;
+}
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.btn-back {
+  margin-top: 7rem;
+  font-family: inherit;
+  font-size: 2rem;
+  text-decoration: none;
+  background-color: #4d5063;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: .8rem;
+}
+
+.btn-back:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.btn-back:active {
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
+}
+
+@-webkit-keyframes left-right {
+  0% {
+    -webkit-transform: translateX(-4rem);
+            transform: translateX(-4rem);
+  }
+  100% {
+    -webkit-transform: translateX(4rem);
+            transform: translateX(4rem);
+  }
+}
+
+@keyframes left-right {
+  0% {
+    -webkit-transform: translateX(-4rem);
+            transform: translateX(-4rem);
+  }
+  100% {
+    -webkit-transform: translateX(4rem);
+            transform: translateX(4rem);
+  }
+}
+
+@-webkit-keyframes sideInUp {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes sideInUp {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=res.css.map */
