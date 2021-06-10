@@ -98,6 +98,28 @@ select:focus {
   outline: none;
 }
 
+.btn {
+  position: absolute;
+  bottom: 10%;
+  right: 43%;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: 2rem;
+  margin-right: 1rem;
+  background: #0f66e9;
+  border-radius: .8rem;
+  padding: 2rem;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.btn:hover {
+  -webkit-transform: scaleX(1.1);
+          transform: scaleX(1.1);
+}
+
 ::-webkit-input-placeholder {
   color: #000000c2;
 }
