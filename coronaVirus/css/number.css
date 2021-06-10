@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display+SC:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #202C37;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-x: hidden;
+}
+
+.search-container {
+  width: 100vw;
+  height: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-left: 1.5rem;
+  padding: 0 2rem;
+}
+
+.num-input {
+  display: block;
+  font-size: 2.2rem;
+  color: #fff;
+  background-color: #2B3945;
+  width: 40rem;
+  height: 5rem;
+  border: 0;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 0 1rem #111111;
+          box-shadow: 0 0 1rem #111111;
+  padding: 1.5rem 1.5rem;
+}
+
+.num-input:focus {
+  outline: 0;
+}
+
+.search-btn {
+  position: absolute;
+  top: 35%;
+  left: 24%;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: 2rem;
+  margin-right: 1rem;
+  background: #0f66e9;
+  border-radius: .8rem;
+  padding: 2rem;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.btn:hover {
+  -webkit-transform: scaleX(1.1);
+          transform: scaleX(1.1);
+}
+
+::-webkit-input-placeholder {
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.541);
+}
+
+:-ms-input-placeholder {
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.541);
+}
+
+::-ms-input-placeholder {
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.541);
+}
+
+::placeholder {
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.541);
+}
+
+.country-container {
+  width: 100%;
+  height: 90vh;
+  padding-left: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (30rem)[4];
+      grid-template-columns: repeat(4, 30rem);
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: 10rem;
+}
+
+.country {
+  background-color: #2B3945;
+  border-radius: .8rem;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.country__info {
+  padding: 1.5rem;
+  color: #BFBFBF;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.country__img {
+  width: 100%;
+  border-top-left-radius: .8rem;
+  border-top-right-radius: .8rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.country__name {
+  font-family: 'Playfair Display SC', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.country__row {
+  font-size: 1.9rem;
+  font-family: 'Lato', sans-serif;
+}
+
+.country__row:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.country__row span {
+  color: #fff;
+  margin-right: 1rem;
+}
+
+.country:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+/*# sourceMappingURL=number.css.map */
