@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #8360c3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    -45deg,
+    #2ebf91,
+    #8360c3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(-45deg, #2ebf91, #8360c3);
+}
+
+.container {
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+}
+
+button {
+  background-color: transparent;
+  color: #131212;
+  font-size: 3.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-weight: 500;
+  border: 2px solid #131212;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  outline: none;
+  cursor: pointer;
+  margin: 0 auto;
+  transition: 0.4s;
+}
+
+button:hover {
+  color: #fff;
+}
+
+.pass {
+  font-size: 4rem;
+  color: #f0f0f0;
+  background-color: transparent;
+  border: none;
+  letter-spacing: 0.2rem;
+  user-select: none;
+}
+
+.pass:focus {
+  outline: none;
+}
+
+.cover {
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  padding: 1rem 0;
+  text-align: center;
+  position: absolute;
+  top: 68%;
+  font-size: 4rem;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.pass:hover + .cover,
+.cover:hover {
+  opacity: 1;
+}
+
+.hide {
+  display: none;
+}
+
+.copy-message {
+  text-align: center;
+  font-size: 4rem;
+  color: #0b6617;
+  transition: 0.4s;
+}
